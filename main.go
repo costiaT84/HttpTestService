@@ -1,10 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
-
 
 func main() {
 	router := gin.Default()
@@ -17,9 +17,11 @@ func main() {
 
 		c.String(http.StatusOK, "Hello %s %s", firstname, lastname)
 	})
-	router.Run(":8080")
+	err := router.Run(":8080")
+
+	if err != nil {
+		fmt.Printf("error %v was happend", err)
+	}
+
+	fmt.Println("new change was added")
 }
-
-
-
-
