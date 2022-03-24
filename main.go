@@ -27,5 +27,6 @@ func main() {
 
 	fmt.Println("add first print")
 	fmt.Println("add third print")
+	fmt.Println("add seven print")
 
 }
