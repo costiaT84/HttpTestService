@@ -26,7 +26,6 @@ func main() {
 	fmt.Println("new change was added")
 
 	fmt.Println("add first print")
-	fmt.Println("add second print")
 	fmt.Println("add third print")
 
 }
