@@ -24,4 +24,6 @@ func main() {
 	}
 
 	fmt.Println("new change was added")
+
+	fmt.Println("add first print")
 }
